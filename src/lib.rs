@@ -13,7 +13,7 @@ pub enum Packet {
     List(),
 }
 
-#[derive(Debug, Serialize, Deserialize, PartialEq)]
+#[derive(Debug, Serialize, Deserialize, PartialEq, Clone)]
 pub struct PlayerState {
     pub uuid: Uuid,
     pub x: f32,
